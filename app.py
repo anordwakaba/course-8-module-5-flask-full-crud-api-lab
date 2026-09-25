@@ -20,10 +20,12 @@ events = [
 ]
 
 
+
 # ROOT
 @app.route("/")
 def home():
     return jsonify({"message": "Welcome to the Event API"}), 200
+
 
 
 # GET
@@ -83,4 +85,3 @@ def delete_event(event_id):
 
 if __name__ == "__main__":
     app.run(debug=True)
-    
